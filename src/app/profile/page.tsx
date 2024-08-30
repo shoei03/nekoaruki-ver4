@@ -1,4 +1,5 @@
 import IconLabelTabs from "../../components/IconLabelTabs";
+import DiscreteSliderMarks from "../../components/DiscreteSliderMarks";
 
 export default function ProfilePage() {
   return (

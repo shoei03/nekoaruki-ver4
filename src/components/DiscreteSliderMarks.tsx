@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
 const marks = [
@@ -25,7 +24,7 @@ function valuetext(value: number) {
 
 export default function DiscreteSliderMarks() {
   return (
-    <Box sx={{ width: 300 }}>
+    <div className="w-full px-6">
       <Slider
         aria-label="Custom marks"
         defaultValue={2000}
@@ -36,6 +35,6 @@ export default function DiscreteSliderMarks() {
         min={1000}
         max={10000}
       />
-    </Box>
+    </div>
   );
 }
