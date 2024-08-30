@@ -5,6 +5,7 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeIcon from '@mui/icons-material/Home';
 import DoNotStepIcon from '@mui/icons-material/DoNotStep';
+import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useRouter } from 'next/navigation'; // App Routerに対応するuseRouter
 import { Box } from '@mui/material';
@@ -35,6 +36,11 @@ export default function SimpleBottomNavigation() {
           label="Steps"
           icon={<DoNotStepIcon />}
           onClick={() => handleNavigation('/steps')} // stepsページに遷移
+        />
+        <BottomNavigationAction
+          label="Camera"
+          icon={<PhotoCameraIcon />}
+          onClick={() => handleNavigation('/camera')} // stepsページに遷移
         />
         <BottomNavigationAction
           label="Profile"
