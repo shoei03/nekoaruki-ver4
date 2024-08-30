@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
 
 const VisuallyHiddenInput = styled('input')({
   clip: 'rect(0 0 0 0)',
@@ -19,15 +19,15 @@ const VisuallyHiddenInput = styled('input')({
 
 export default function InputFileUpload() {
   return (
-    <div>
+    <div className='mt-8'>
       <Button
         component="label"
         role={undefined}
         variant="contained"
         tabIndex={-1}
-        startIcon={<CloudUploadIcon />}
+        startIcon={<PhotoCameraIcon />}
       >
-        Upload files
+        take a picture
         <VisuallyHiddenInput
           type="file"
           onChange={(event) => console.log(event.target.files)}

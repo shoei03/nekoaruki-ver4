@@ -38,11 +38,6 @@ export default function SimpleBottomNavigation() {
           onClick={() => handleNavigation('/steps')} // stepsページに遷移
         />
         <BottomNavigationAction
-          label="Camera"
-          icon={<PhotoCameraIcon />}
-          onClick={() => handleNavigation('/camera')} // stepsページに遷移
-        />
-        <BottomNavigationAction
           label="Profile"
           icon={<AccountCircleIcon />}
           onClick={() => handleNavigation('/profile')} // profileページに遷移
