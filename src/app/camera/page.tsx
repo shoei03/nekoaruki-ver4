@@ -1,10 +1,10 @@
-import Link from "next/link";
+import React, { useEffect, useRef } from 'react';
+import InputFileUpload from "../../components/InputFileUpload";
 
-export default function ProfilePage() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Home Page</h1>
-      <Link href="/">Got to AS</Link>
-    </main>
+export default function CameraPage() {
+  return(
+    <div>
+      <InputFileUpload />
+    </div>
   );
 }
