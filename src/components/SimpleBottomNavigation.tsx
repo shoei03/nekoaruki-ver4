@@ -19,7 +19,7 @@ export default function SimpleBottomNavigation() {
   };
 
   return (
-    <Box className="fixed bottom-0 w-full">
+    <Box className="fixed bottom-0 w-full z-30">
       <BottomNavigation
         showLabels
         value={value}

@@ -2,21 +2,23 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative w-[500px] h-[300px]">
-      <Image
-        src="/backGround-0.png"
-        layout="fill"
-        objectFit="cover"
-        alt="background"
-        className="absolute"
-      />
-      <Image
-        src="/backGround-1.png" // 重ねる画像のパスを指定
-        layout="fill"
-        objectFit="contain"
-        alt="overlay"
-        className="absolute"
-      />
+    <div className="relative h-screen">
+    {/* 背景画像（背面） */}
+    <div
+      className="absolute inset-0 bg-cover bg-center z-0"
+      style={{ backgroundImage: "url('/backGround-0.png')" }}
+    />
+
+    {/* テキスト部分 */}
+    <div className="relative z-10 flex items-center justify-center h-full">
+      <h1 className="text-white text-5xl font-bold">Welcome to My Website</h1>
     </div>
+
+    {/* オーバーレイ画像（前面） */}
+    <div
+      className="absolute inset-0 bg-cover bg-center z-10"
+      style={{ backgroundImage: "url('/backGround-1.png')" }}
+    />
+  </div>
   );
 }
